@@ -1,0 +1,71 @@
+/*
+
+2o ADS
+Rafael Giordano Matesco
+Gustavo Monteiro Greco
+
+
+*/
+
+
+1)
+for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }   
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+2)
+ int x = 0;
+        while (x < 5) {
+            x += 1;
+            System.out.println(x);
+        }  
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+3)
+ int x = 0;
+        do {
+            x += 1;
+            System.out.println(x);
+        } while (x < 5);
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+4)
+for (int i = 1; i <= 15; i++) {
+            if(i % 2 == 0){
+                System.out.println(i + " é par");
+            }
+        }
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+5)
+int somatorio = 0;
+        for (int i = 0; i <= 10; i++) {
+            somatorio += i;
+        }
+        System.out.println(somatorio);
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+6)
+ int somatorio = 0;
+        int contador = 0;
+        for (int i = 0; i <= 100; i++) {
+            if (i % 2 != 0) {
+                somatorio += i;
+                contador++;
+            }
+        }
+
+        System.out.println((float)somatorio/contador);
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+7)
+ String nome = JOptionPane.showInputDialog("Nome: ");
+
+        if(nome.length() > 0){
+            JOptionPane.showMessageDialog(null, nome, "Nome digitado", 1);
+        }
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+8)
+ String input = JOptionPane.showInputDialog("Numero: ");
+        int num = Integer.parseInt(input);
+
+        String texto = num % 2 == 0 ? "Par" : "Impar";
+        JOptionPane.showMessageDialog(null, texto, "Nome digitado", 1);
+
+
